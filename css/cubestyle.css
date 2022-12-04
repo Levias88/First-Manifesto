@@ -1,0 +1,203 @@
+.h1 {
+  font-family: joschmi, sans-serif;
+  font-style: normal;
+  font-size: 70px;
+  color: white;
+  font-style: bold;
+  display: inline-block;
+  position: absolute;
+  left: 310px;
+  top: 300px;
+}
+.main-text {
+  color: white;
+  font-family: reross-quadratic;
+  font-style: normal;
+  width: 900px;
+  display: inline-block;
+  position: absolute;
+  top: 450px;
+  left: 22%;
+  margin-bottom: 100px;
+}
+
+.img {
+  width: 118px;
+  position: absolute;
+  bottom: 600px;
+  display: inline-block;
+}
+
+.border {
+  width: 250px;
+  height: 250px;
+  border: 10px solid black;
+  background: transparent;
+  position: absolute;
+  top: 165px;
+  left: 963px;
+  border-color: white;
+}
+
+.rectangle {
+  height: 120px;
+  width: 100%;
+  background-color: #494947;
+  position: absolute;
+  top: -20px;
+  right: 0px;
+}
+
+.rectangle-black {
+  height: 50px;
+  width: 100%;
+  background-color: #232321;
+  position: absolute;
+  top: 1100px;
+}
+
+.body {
+  position: relative;
+}
+
+.div-inline {
+  display: inline-block;
+}
+
+.background {
+  background-color: #232321
+}
+
+.caption {
+  color: white;
+  font-family: reross-quadratic;
+  font-style: normal;
+  width: 500px;
+  font-size: 12px;
+  position: absolute;
+  top: 960px;
+  left: 840px;
+}
+
+.button {
+  font-family: reross-quadratic;
+  font-style: normal;
+  background-color: white;
+  color: #232321;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-color: white;
+  border-radius: 100px;
+  cursor: pointer;
+  position: absolute;
+  top: 1030px;
+  left: 1080px;
+  margin-bottom: 100px
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  position: absolute;
+  left: 1000px;
+  top: 200px;
+}
+
+.header {
+  padding: 90px;
+  background: white;
+}
+
+#cube {
+  font-family: joschmi, sans-serif;
+  font-style: normal;
+  color: white;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: rotatecube 10s infinite;
+
+  -moz-transform-style: preserve-3d;
+  -moz-animation: rotatecube 10s infinite;
+}
+
+#cube div {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: absolute;
+  border: none;
+  line-height: 200px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+@-webkit-keyframes rotatecube {
+  0% { -webkit-transform: rotateX(0deg) rotateY(360deg) rotateZ(90deg); }
+  25% { -webkit-transform: rotateX(90deg) rotateY(270deg) rotateZ(180deg); }
+  50% { -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(0deg); }
+  75% { -webkit-transform: rotateX(270deg) rotateY(90deg) rotateZ(360deg); }
+  100% { -webkit-transform: rotateX(360deg) rotateY(0deg) rotateZ(270deg); }
+}
+
+@-moz-keyframes rotatecube {
+  0% { -moz-transform: rotateX(0deg) rotateY(360deg) rotateZ(90deg); }
+  25% { -moz-transform: rotateX(90deg) rotateY(270deg) rotateZ(180deg); }
+  50% { -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(0deg); }
+  75% { -moz-transform: rotateX(270deg) rotateY(90deg) rotateZ(360deg); }
+  100% { -moz-transform: rotateX(360deg) rotateY(0deg) rotateZ(270deg); }
+}
+
+.front {
+  background: #E54038;
+}
+
+.back {
+  background: #4668B1;
+}
+
+.right {
+  background: #EAA643;
+}
+
+.left {
+  background: #52AA52;
+}
+
+.top {
+  background: #4668B1;
+}
+
+.bottom {
+  background: #4668B1;
+}
+
+#cube .front  {
+  -webkit-transform: rotateY(0deg ) translateZ( 100px );
+  -moz-transform: rotateY( 0deg ) translateZ( 100px );
+}
+#cube .back {
+  -webkit-transform: rotateX( 180deg ) translateZ( 100px );
+  -moz-transform: rotateX( 180deg ) translateZ( 100px );
+}
+#cube .right  {
+  -webkit-transform: rotateY(  90deg ) translateZ( 100px );
+  -moz-transform: rotateY(  90deg ) translateZ( 100px );
+}
+#cube .left   {
+  -webkit-transform: rotateY( -90deg ) translateZ( 100px );
+  -moz-transform: rotateY( -90deg ) translateZ( 100px );
+}
+#cube .top    {
+  -webkit-transform: rotateX(  90deg ) translateZ( 100px );
+  -moz-transform: rotateX(  90deg ) translateZ( 100px );
+}
+#cube .bottom {
+  -webkit-transform: rotateX( -90deg ) translateZ( 100px );
+  -moz-transform: rotateX( -90deg ) translateZ( 100px );
+}
